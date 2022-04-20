@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_general_service_types",
+  "info": {
+    "displayName": "Service type",
+    "icon": "hand-holding-heart"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

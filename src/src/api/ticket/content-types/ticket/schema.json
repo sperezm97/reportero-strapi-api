@@ -4,19 +4,14 @@
   "info": {
     "singularName": "ticket",
     "pluralName": "tickets",
-    "displayName": "Ticket"
+    "displayName": "Ticket",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Priority": {
-      "displayName": "Priority",
-      "type": "component",
-      "repeatable": false,
-      "component": "alta.priority"
-    },
     "Title": {
       "type": "string",
       "required": true
@@ -25,6 +20,56 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "admin::user"
+    },
+    "services": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service.service"
+    },
+    "institution": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::institution.institution"
+    },
+    "beneficiary": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "zone": {
+      "type": "integer"
+    },
+    "address": {
+      "type": "text"
+    },
+    "evidence": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "priority": {
+      "type": "component",
+      "repeatable": false,
+      "component": "tickets.priority"
+    },
+    "state": {
+      "type": "component",
+      "repeatable": false,
+      "component": "tickets.state"
+    },
+    "owner": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
     }
   }
 }

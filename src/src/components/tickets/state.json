@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_tickets_states",
+  "info": {
+    "displayName": "State",
+    "icon": "clipboard-check"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
