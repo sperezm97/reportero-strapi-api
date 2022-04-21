@@ -48,6 +48,12 @@
       "relation": "oneToMany",
       "target": "api::ticket.ticket",
       "mappedBy": "institution"
+    },
+    "members": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "institution"
     }
   }
 }
