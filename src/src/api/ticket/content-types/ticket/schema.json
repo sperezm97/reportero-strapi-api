@@ -16,10 +16,10 @@
       "type": "string",
       "required": true
     },
-    "userId": {
+    "users_permissions_user": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "admin::user"
+      "target": "plugin::users-permissions.user"
     },
     "services": {
       "type": "relation",
@@ -34,7 +34,7 @@
     "beneficiary": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
+      "target": "api::beneficiary.beneficiary"
     },
     "zone": {
       "type": "integer"
