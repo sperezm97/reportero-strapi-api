@@ -38,10 +38,16 @@
       "relation": "oneToMany",
       "target": "api::service.service"
     },
-    "users_permissions_user": {
+    "owner": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
+    },
+    "tickets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ticket.ticket",
+      "mappedBy": "institution"
     }
   }
 }

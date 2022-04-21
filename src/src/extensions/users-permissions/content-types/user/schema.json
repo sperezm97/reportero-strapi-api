@@ -78,6 +78,12 @@
     "phone": {
       "type": "integer",
       "max": 10
+    },
+    "tickets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ticket.ticket",
+      "mappedBy": "owner"
     }
   }
 }

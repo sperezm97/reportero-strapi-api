@@ -23,6 +23,12 @@
     "phone": {
       "type": "string",
       "maxLength": 10
+    },
+    "tickets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ticket.ticket",
+      "mappedBy": "beneficiary"
     }
   }
 }

@@ -15,13 +15,22 @@
     "name": {
       "type": "string"
     },
-    "parent": {
-      "type": "integer"
-    },
     "type": {
       "type": "component",
       "repeatable": false,
       "component": "general.service-type"
+    },
+    "parent": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::service.service",
+      "inversedBy": "children"
+    },
+    "children": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service.service",
+      "mappedBy": "parent"
     }
   }
 }

@@ -16,11 +16,6 @@
       "type": "string",
       "required": true
     },
-    "users_permissions_user": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
-    },
     "services": {
       "type": "relation",
       "relation": "oneToMany",
@@ -28,13 +23,15 @@
     },
     "institution": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::institution.institution"
+      "relation": "manyToOne",
+      "target": "api::institution.institution",
+      "inversedBy": "tickets"
     },
     "beneficiary": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::beneficiary.beneficiary"
+      "relation": "manyToOne",
+      "target": "api::beneficiary.beneficiary",
+      "inversedBy": "tickets"
     },
     "zone": {
       "type": "integer"
@@ -68,8 +65,9 @@
     },
     "owner": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "tickets"
     }
   }
 }
