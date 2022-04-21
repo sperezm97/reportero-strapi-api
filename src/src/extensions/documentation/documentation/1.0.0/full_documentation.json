@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-04-21T22:27:01.164Z"
+    "x-generation-date": "2022-04-21T22:29:20.860Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -855,6 +855,12 @@
                                                               }
                                                             }
                                                           }
+                                                        },
+                                                        "active": {
+                                                          "type": "boolean"
+                                                        },
+                                                        "note": {
+                                                          "type": "string"
                                                         },
                                                         "createdAt": {
                                                           "type": "string",
@@ -3094,6 +3100,12 @@
                                                           }
                                                         }
                                                       },
+                                                      "active": {
+                                                        "type": "boolean"
+                                                      },
+                                                      "note": {
+                                                        "type": "string"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -5254,6 +5266,12 @@
                                                           }
                                                         }
                                                       },
+                                                      "active": {
+                                                        "type": "boolean"
+                                                      },
+                                                      "note": {
+                                                        "type": "string"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -7400,6 +7418,12 @@
                                                             }
                                                           }
                                                         }
+                                                      },
+                                                      "active": {
+                                                        "type": "boolean"
+                                                      },
+                                                      "note": {
+                                                        "type": "string"
                                                       },
                                                       "createdAt": {
                                                         "type": "string",
@@ -9792,6 +9816,12 @@
                                                             }
                                                           }
                                                         }
+                                                      },
+                                                      "active": {
+                                                        "type": "boolean"
+                                                      },
+                                                      "note": {
+                                                        "type": "string"
                                                       },
                                                       "createdAt": {
                                                         "type": "string",
@@ -12439,6 +12469,12 @@
                                                         }
                                                       }
                                                     },
+                                                    "active": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "note": {
+                                                      "type": "string"
+                                                    },
                                                     "createdAt": {
                                                       "type": "string",
                                                       "format": "date-time"
@@ -15004,6 +15040,12 @@
                                                         }
                                                       }
                                                     },
+                                                    "active": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "note": {
+                                                      "type": "string"
+                                                    },
                                                     "createdAt": {
                                                       "type": "string",
                                                       "format": "date-time"
@@ -17558,6 +17600,12 @@
                                                           }
                                                         }
                                                       }
+                                                    },
+                                                    "active": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "note": {
+                                                      "type": "string"
                                                     },
                                                     "createdAt": {
                                                       "type": "string",
@@ -21433,6 +21481,12 @@
                                                           }
                                                         }
                                                       },
+                                                      "active": {
+                                                        "type": "boolean"
+                                                      },
+                                                      "note": {
+                                                        "type": "string"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -21601,6 +21655,12 @@
                                     }
                                   }
                                 }
+                              },
+                              "active": {
+                                "type": "boolean"
+                              },
+                              "note": {
+                                "type": "string"
                               },
                               "createdAt": {
                                 "type": "string",
@@ -23738,6 +23798,12 @@
                                                         }
                                                       }
                                                     },
+                                                    "active": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "note": {
+                                                      "type": "string"
+                                                    },
                                                     "createdAt": {
                                                       "type": "string",
                                                       "format": "date-time"
@@ -23906,6 +23972,12 @@
                                   }
                                 }
                               }
+                            },
+                            "active": {
+                              "type": "boolean"
+                            },
+                            "note": {
+                              "type": "string"
                             },
                             "createdAt": {
                               "type": "string",
@@ -25965,6 +26037,12 @@
                                                         }
                                                       }
                                                     },
+                                                    "active": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "note": {
+                                                      "type": "string"
+                                                    },
                                                     "createdAt": {
                                                       "type": "string",
                                                       "format": "date-time"
@@ -26133,6 +26211,12 @@
                                   }
                                 }
                               }
+                            },
+                            "active": {
+                              "type": "boolean"
+                            },
+                            "note": {
+                              "type": "string"
                             },
                             "createdAt": {
                               "type": "string",
@@ -28179,6 +28263,12 @@
                                                         }
                                                       }
                                                     },
+                                                    "active": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "note": {
+                                                      "type": "string"
+                                                    },
                                                     "createdAt": {
                                                       "type": "string",
                                                       "format": "date-time"
@@ -28347,6 +28437,12 @@
                                   }
                                 }
                               }
+                            },
+                            "active": {
+                              "type": "boolean"
+                            },
+                            "note": {
+                              "type": "string"
                             },
                             "createdAt": {
                               "type": "string",
@@ -28648,6 +28744,12 @@
                           ],
                           "example": "string or id"
                         }
+                      },
+                      "active": {
+                        "type": "boolean"
+                      },
+                      "note": {
+                        "type": "string"
                       },
                       "createdAt": {
                         "type": "string",
@@ -33742,6 +33844,12 @@
                                               }
                                             }
                                           },
+                                          "active": {
+                                            "type": "boolean"
+                                          },
+                                          "note": {
+                                            "type": "string"
+                                          },
                                           "createdAt": {
                                             "type": "string",
                                             "format": "date-time"
@@ -36449,6 +36557,12 @@
                                             }
                                           }
                                         },
+                                        "active": {
+                                          "type": "boolean"
+                                        },
+                                        "note": {
+                                          "type": "string"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -39075,6 +39189,12 @@
                                             }
                                           }
                                         },
+                                        "active": {
+                                          "type": "boolean"
+                                        },
+                                        "note": {
+                                          "type": "string"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -41690,6 +41810,12 @@
                                               }
                                             }
                                           }
+                                        },
+                                        "active": {
+                                          "type": "boolean"
+                                        },
+                                        "note": {
+                                          "type": "string"
                                         },
                                         "createdAt": {
                                           "type": "string",

@@ -54,6 +54,12 @@
       "relation": "oneToMany",
       "target": "plugin::users-permissions.user",
       "mappedBy": "institution"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "note": {
+      "type": "richtext"
     }
   }
 }
