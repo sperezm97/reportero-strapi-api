@@ -92,6 +92,26 @@
     "vip": {
       "type": "boolean",
       "default": false
+    },
+    "profile_type": {
+      "type": "enumeration",
+      "enum": [
+        "presidencial",
+        "regional",
+        "provincial",
+        "municipal",
+        "distrital"
+      ]
+    },
+    "profile_picture": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
