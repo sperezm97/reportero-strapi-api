@@ -1806,7 +1806,7 @@
                                                           "content_type": {
                                                             "type": "string",
                                                             "enum": [
-                                                              "text",
+                                                              "text/plain",
                                                               "text/html"
                                                             ]
                                                           },
@@ -4051,7 +4051,7 @@
                                                         "content_type": {
                                                           "type": "string",
                                                           "enum": [
-                                                            "text",
+                                                            "text/plain",
                                                             "text/html"
                                                           ]
                                                         },
@@ -6218,7 +6218,7 @@
                                                         "content_type": {
                                                           "type": "string",
                                                           "enum": [
-                                                            "text",
+                                                            "text/plain",
                                                             "text/html"
                                                           ]
                                                         },
@@ -8372,7 +8372,7 @@
                                                         "content_type": {
                                                           "type": "string",
                                                           "enum": [
-                                                            "text",
+                                                            "text/plain",
                                                             "text/html"
                                                           ]
                                                         },

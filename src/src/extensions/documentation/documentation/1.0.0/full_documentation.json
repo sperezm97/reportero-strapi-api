@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-04-22T13:22:21.020Z"
+    "x-generation-date": "2022-04-22T13:25:45.240Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -1856,7 +1856,7 @@
                                                           "content_type": {
                                                             "type": "string",
                                                             "enum": [
-                                                              "text",
+                                                              "text/plain",
                                                               "text/html"
                                                             ]
                                                           },
@@ -4101,7 +4101,7 @@
                                                         "content_type": {
                                                           "type": "string",
                                                           "enum": [
-                                                            "text",
+                                                            "text/plain",
                                                             "text/html"
                                                           ]
                                                         },
@@ -6268,7 +6268,7 @@
                                                         "content_type": {
                                                           "type": "string",
                                                           "enum": [
-                                                            "text",
+                                                            "text/plain",
                                                             "text/html"
                                                           ]
                                                         },
@@ -8422,7 +8422,7 @@
                                                         "content_type": {
                                                           "type": "string",
                                                           "enum": [
-                                                            "text",
+                                                            "text/plain",
                                                             "text/html"
                                                           ]
                                                         },
@@ -10821,7 +10821,7 @@
                                                         "content_type": {
                                                           "type": "string",
                                                           "enum": [
-                                                            "text",
+                                                            "text/plain",
                                                             "text/html"
                                                           ]
                                                         },
@@ -11363,7 +11363,7 @@
                               "content_type": {
                                 "type": "string",
                                 "enum": [
-                                  "text",
+                                  "text/plain",
                                   "text/html"
                                 ]
                               },
@@ -13474,7 +13474,7 @@
                                                       "content_type": {
                                                         "type": "string",
                                                         "enum": [
-                                                          "text",
+                                                          "text/plain",
                                                           "text/html"
                                                         ]
                                                       },
@@ -14016,7 +14016,7 @@
                             "content_type": {
                               "type": "string",
                               "enum": [
-                                "text",
+                                "text/plain",
                                 "text/html"
                               ]
                             },
@@ -16046,7 +16046,7 @@
                                                       "content_type": {
                                                         "type": "string",
                                                         "enum": [
-                                                          "text",
+                                                          "text/plain",
                                                           "text/html"
                                                         ]
                                                       },
@@ -16588,7 +16588,7 @@
                             "content_type": {
                               "type": "string",
                               "enum": [
-                                "text",
+                                "text/plain",
                                 "text/html"
                               ]
                             },
@@ -18608,7 +18608,7 @@
                                                       "content_type": {
                                                         "type": "string",
                                                         "enum": [
-                                                          "text",
+                                                          "text/plain",
                                                           "text/html"
                                                         ]
                                                       },
@@ -19150,7 +19150,7 @@
                             "content_type": {
                               "type": "string",
                               "enum": [
-                                "text",
+                                "text/plain",
                                 "text/html"
                               ]
                             },
@@ -19439,7 +19439,7 @@
                       "content_type": {
                         "type": "string",
                         "enum": [
-                          "text",
+                          "text/plain",
                           "text/html"
                         ]
                       },
@@ -21334,7 +21334,7 @@
                                                                                   "content_type": {
                                                                                     "type": "string",
                                                                                     "enum": [
-                                                                                      "text",
+                                                                                      "text/plain",
                                                                                       "text/html"
                                                                                     ]
                                                                                   },
@@ -23652,7 +23652,7 @@
                                                                                 "content_type": {
                                                                                   "type": "string",
                                                                                   "enum": [
-                                                                                    "text",
+                                                                                    "text/plain",
                                                                                     "text/html"
                                                                                   ]
                                                                                 },
@@ -25892,7 +25892,7 @@
                                                                                 "content_type": {
                                                                                   "type": "string",
                                                                                   "enum": [
-                                                                                    "text",
+                                                                                    "text/plain",
                                                                                     "text/html"
                                                                                   ]
                                                                                 },
@@ -28119,7 +28119,7 @@
                                                                                 "content_type": {
                                                                                   "type": "string",
                                                                                   "enum": [
-                                                                                    "text",
+                                                                                    "text/plain",
                                                                                     "text/html"
                                                                                   ]
                                                                                 },
@@ -33609,7 +33609,7 @@
                                                                                   "content_type": {
                                                                                     "type": "string",
                                                                                     "enum": [
-                                                                                      "text",
+                                                                                      "text/plain",
                                                                                       "text/html"
                                                                                     ]
                                                                                   },
@@ -36321,7 +36321,7 @@
                                                                                 "content_type": {
                                                                                   "type": "string",
                                                                                   "enum": [
-                                                                                    "text",
+                                                                                    "text/plain",
                                                                                     "text/html"
                                                                                   ]
                                                                                 },
@@ -38952,7 +38952,7 @@
                                                                                 "content_type": {
                                                                                   "type": "string",
                                                                                   "enum": [
-                                                                                    "text",
+                                                                                    "text/plain",
                                                                                     "text/html"
                                                                                   ]
                                                                                 },
@@ -41573,7 +41573,7 @@
                                                                                 "content_type": {
                                                                                   "type": "string",
                                                                                   "enum": [
-                                                                                    "text",
+                                                                                    "text/plain",
                                                                                     "text/html"
                                                                                   ]
                                                                                 },

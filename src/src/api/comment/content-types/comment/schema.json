@@ -50,10 +50,10 @@
     "content_type": {
       "type": "enumeration",
       "enum": [
-        "text",
+        "text/plain",
         "text/html"
       ],
-      "default": "text"
+      "default": "text/plain"
     }
   }
 }
