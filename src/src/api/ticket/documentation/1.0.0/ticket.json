@@ -1201,28 +1201,6 @@
                                                                     "description": {
                                                                       "type": "string"
                                                                     },
-                                                                    "priority": {
-                                                                      "type": "object",
-                                                                      "properties": {
-                                                                        "id": {
-                                                                          "type": "string"
-                                                                        },
-                                                                        "Name": {
-                                                                          "type": "string"
-                                                                        }
-                                                                      }
-                                                                    },
-                                                                    "state": {
-                                                                      "type": "object",
-                                                                      "properties": {
-                                                                        "id": {
-                                                                          "type": "string"
-                                                                        },
-                                                                        "name": {
-                                                                          "type": "string"
-                                                                        }
-                                                                      }
-                                                                    },
                                                                     "owner": {
                                                                       "type": "object",
                                                                       "properties": {
@@ -1743,6 +1721,26 @@
                                                                           }
                                                                         }
                                                                       }
+                                                                    },
+                                                                    "state": {
+                                                                      "type": "string",
+                                                                      "enum": [
+                                                                        "new",
+                                                                        "open",
+                                                                        "pending reminder",
+                                                                        "closed",
+                                                                        "merged",
+                                                                        "removed",
+                                                                        "pending close"
+                                                                      ]
+                                                                    },
+                                                                    "priority": {
+                                                                      "type": "string",
+                                                                      "enum": [
+                                                                        "low",
+                                                                        "normal",
+                                                                        "high"
+                                                                      ]
                                                                     },
                                                                     "createdAt": {
                                                                       "type": "string",
@@ -2348,28 +2346,6 @@
                               "description": {
                                 "type": "string"
                               },
-                              "priority": {
-                                "type": "object",
-                                "properties": {
-                                  "id": {
-                                    "type": "string"
-                                  },
-                                  "Name": {
-                                    "type": "string"
-                                  }
-                                }
-                              },
-                              "state": {
-                                "type": "object",
-                                "properties": {
-                                  "id": {
-                                    "type": "string"
-                                  },
-                                  "name": {
-                                    "type": "string"
-                                  }
-                                }
-                              },
                               "owner": {
                                 "type": "object",
                                 "properties": {
@@ -2406,6 +2382,26 @@
                                     }
                                   }
                                 }
+                              },
+                              "state": {
+                                "type": "string",
+                                "enum": [
+                                  "new",
+                                  "open",
+                                  "pending reminder",
+                                  "closed",
+                                  "merged",
+                                  "removed",
+                                  "pending close"
+                                ]
+                              },
+                              "priority": {
+                                "type": "string",
+                                "enum": [
+                                  "low",
+                                  "normal",
+                                  "high"
+                                ]
                               },
                               "createdAt": {
                                 "type": "string",
@@ -3917,28 +3913,6 @@
                                                                   "description": {
                                                                     "type": "string"
                                                                   },
-                                                                  "priority": {
-                                                                    "type": "object",
-                                                                    "properties": {
-                                                                      "id": {
-                                                                        "type": "string"
-                                                                      },
-                                                                      "Name": {
-                                                                        "type": "string"
-                                                                      }
-                                                                    }
-                                                                  },
-                                                                  "state": {
-                                                                    "type": "object",
-                                                                    "properties": {
-                                                                      "id": {
-                                                                        "type": "string"
-                                                                      },
-                                                                      "name": {
-                                                                        "type": "string"
-                                                                      }
-                                                                    }
-                                                                  },
                                                                   "owner": {
                                                                     "type": "object",
                                                                     "properties": {
@@ -4459,6 +4433,26 @@
                                                                         }
                                                                       }
                                                                     }
+                                                                  },
+                                                                  "state": {
+                                                                    "type": "string",
+                                                                    "enum": [
+                                                                      "new",
+                                                                      "open",
+                                                                      "pending reminder",
+                                                                      "closed",
+                                                                      "merged",
+                                                                      "removed",
+                                                                      "pending close"
+                                                                    ]
+                                                                  },
+                                                                  "priority": {
+                                                                    "type": "string",
+                                                                    "enum": [
+                                                                      "low",
+                                                                      "normal",
+                                                                      "high"
+                                                                    ]
                                                                   },
                                                                   "createdAt": {
                                                                     "type": "string",
@@ -5064,28 +5058,6 @@
                             "description": {
                               "type": "string"
                             },
-                            "priority": {
-                              "type": "object",
-                              "properties": {
-                                "id": {
-                                  "type": "string"
-                                },
-                                "Name": {
-                                  "type": "string"
-                                }
-                              }
-                            },
-                            "state": {
-                              "type": "object",
-                              "properties": {
-                                "id": {
-                                  "type": "string"
-                                },
-                                "name": {
-                                  "type": "string"
-                                }
-                              }
-                            },
                             "owner": {
                               "type": "object",
                               "properties": {
@@ -5122,6 +5094,26 @@
                                   }
                                 }
                               }
+                            },
+                            "state": {
+                              "type": "string",
+                              "enum": [
+                                "new",
+                                "open",
+                                "pending reminder",
+                                "closed",
+                                "merged",
+                                "removed",
+                                "pending close"
+                              ]
+                            },
+                            "priority": {
+                              "type": "string",
+                              "enum": [
+                                "low",
+                                "normal",
+                                "high"
+                              ]
                             },
                             "createdAt": {
                               "type": "string",
@@ -6552,28 +6544,6 @@
                                                                   "description": {
                                                                     "type": "string"
                                                                   },
-                                                                  "priority": {
-                                                                    "type": "object",
-                                                                    "properties": {
-                                                                      "id": {
-                                                                        "type": "string"
-                                                                      },
-                                                                      "Name": {
-                                                                        "type": "string"
-                                                                      }
-                                                                    }
-                                                                  },
-                                                                  "state": {
-                                                                    "type": "object",
-                                                                    "properties": {
-                                                                      "id": {
-                                                                        "type": "string"
-                                                                      },
-                                                                      "name": {
-                                                                        "type": "string"
-                                                                      }
-                                                                    }
-                                                                  },
                                                                   "owner": {
                                                                     "type": "object",
                                                                     "properties": {
@@ -7094,6 +7064,26 @@
                                                                         }
                                                                       }
                                                                     }
+                                                                  },
+                                                                  "state": {
+                                                                    "type": "string",
+                                                                    "enum": [
+                                                                      "new",
+                                                                      "open",
+                                                                      "pending reminder",
+                                                                      "closed",
+                                                                      "merged",
+                                                                      "removed",
+                                                                      "pending close"
+                                                                    ]
+                                                                  },
+                                                                  "priority": {
+                                                                    "type": "string",
+                                                                    "enum": [
+                                                                      "low",
+                                                                      "normal",
+                                                                      "high"
+                                                                    ]
                                                                   },
                                                                   "createdAt": {
                                                                     "type": "string",
@@ -7699,28 +7689,6 @@
                             "description": {
                               "type": "string"
                             },
-                            "priority": {
-                              "type": "object",
-                              "properties": {
-                                "id": {
-                                  "type": "string"
-                                },
-                                "Name": {
-                                  "type": "string"
-                                }
-                              }
-                            },
-                            "state": {
-                              "type": "object",
-                              "properties": {
-                                "id": {
-                                  "type": "string"
-                                },
-                                "name": {
-                                  "type": "string"
-                                }
-                              }
-                            },
                             "owner": {
                               "type": "object",
                               "properties": {
@@ -7757,6 +7725,26 @@
                                   }
                                 }
                               }
+                            },
+                            "state": {
+                              "type": "string",
+                              "enum": [
+                                "new",
+                                "open",
+                                "pending reminder",
+                                "closed",
+                                "merged",
+                                "removed",
+                                "pending close"
+                              ]
+                            },
+                            "priority": {
+                              "type": "string",
+                              "enum": [
+                                "low",
+                                "normal",
+                                "high"
+                              ]
                             },
                             "createdAt": {
                               "type": "string",
@@ -9177,28 +9165,6 @@
                                                                   "description": {
                                                                     "type": "string"
                                                                   },
-                                                                  "priority": {
-                                                                    "type": "object",
-                                                                    "properties": {
-                                                                      "id": {
-                                                                        "type": "string"
-                                                                      },
-                                                                      "Name": {
-                                                                        "type": "string"
-                                                                      }
-                                                                    }
-                                                                  },
-                                                                  "state": {
-                                                                    "type": "object",
-                                                                    "properties": {
-                                                                      "id": {
-                                                                        "type": "string"
-                                                                      },
-                                                                      "name": {
-                                                                        "type": "string"
-                                                                      }
-                                                                    }
-                                                                  },
                                                                   "owner": {
                                                                     "type": "object",
                                                                     "properties": {
@@ -9719,6 +9685,26 @@
                                                                         }
                                                                       }
                                                                     }
+                                                                  },
+                                                                  "state": {
+                                                                    "type": "string",
+                                                                    "enum": [
+                                                                      "new",
+                                                                      "open",
+                                                                      "pending reminder",
+                                                                      "closed",
+                                                                      "merged",
+                                                                      "removed",
+                                                                      "pending close"
+                                                                    ]
+                                                                  },
+                                                                  "priority": {
+                                                                    "type": "string",
+                                                                    "enum": [
+                                                                      "low",
+                                                                      "normal",
+                                                                      "high"
+                                                                    ]
                                                                   },
                                                                   "createdAt": {
                                                                     "type": "string",
@@ -10324,28 +10310,6 @@
                             "description": {
                               "type": "string"
                             },
-                            "priority": {
-                              "type": "object",
-                              "properties": {
-                                "id": {
-                                  "type": "string"
-                                },
-                                "Name": {
-                                  "type": "string"
-                                }
-                              }
-                            },
-                            "state": {
-                              "type": "object",
-                              "properties": {
-                                "id": {
-                                  "type": "string"
-                                },
-                                "name": {
-                                  "type": "string"
-                                }
-                              }
-                            },
                             "owner": {
                               "type": "object",
                               "properties": {
@@ -10382,6 +10346,26 @@
                                   }
                                 }
                               }
+                            },
+                            "state": {
+                              "type": "string",
+                              "enum": [
+                                "new",
+                                "open",
+                                "pending reminder",
+                                "closed",
+                                "merged",
+                                "removed",
+                                "pending close"
+                              ]
+                            },
+                            "priority": {
+                              "type": "string",
+                              "enum": [
+                                "low",
+                                "normal",
+                                "high"
+                              ]
                             },
                             "createdAt": {
                               "type": "string",
@@ -10674,22 +10658,6 @@
                       "description": {
                         "type": "string"
                       },
-                      "priority": {
-                        "type": "object",
-                        "properties": {
-                          "Name": {
-                            "type": "string"
-                          }
-                        }
-                      },
-                      "state": {
-                        "type": "object",
-                        "properties": {
-                          "name": {
-                            "type": "string"
-                          }
-                        }
-                      },
                       "owner": {
                         "oneOf": [
                           {
@@ -10714,6 +10682,26 @@
                           ],
                           "example": "string or id"
                         }
+                      },
+                      "state": {
+                        "type": "string",
+                        "enum": [
+                          "new",
+                          "open",
+                          "pending reminder",
+                          "closed",
+                          "merged",
+                          "removed",
+                          "pending close"
+                        ]
+                      },
+                      "priority": {
+                        "type": "string",
+                        "enum": [
+                          "low",
+                          "normal",
+                          "high"
+                        ]
                       },
                       "createdAt": {
                         "type": "string",

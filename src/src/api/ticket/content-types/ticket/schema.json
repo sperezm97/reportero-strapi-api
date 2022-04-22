@@ -53,16 +53,6 @@
     "description": {
       "type": "text"
     },
-    "priority": {
-      "type": "component",
-      "repeatable": false,
-      "component": "tickets.priority"
-    },
-    "state": {
-      "type": "component",
-      "repeatable": false,
-      "component": "tickets.state"
-    },
     "owner": {
       "type": "relation",
       "relation": "manyToOne",
@@ -74,6 +64,26 @@
       "relation": "oneToMany",
       "target": "api::comment.comment",
       "mappedBy": "ticket"
+    },
+    "state": {
+      "type": "enumeration",
+      "enum": [
+        "new",
+        "open",
+        "pending reminder",
+        "closed",
+        "merged",
+        "removed",
+        "pending close"
+      ]
+    },
+    "priority": {
+      "type": "enumeration",
+      "enum": [
+        "low",
+        "normal",
+        "high"
+      ]
     }
   }
 }
