@@ -85,6 +85,13 @@
       "relation": "oneToMany",
       "target": "api::ticket.ticket",
       "mappedBy": "owner"
+    },
+    "department": {
+      "type": "string"
+    },
+    "vip": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

@@ -718,6 +718,12 @@
                                                                         }
                                                                       }
                                                                     },
+                                                                    "department": {
+                                                                      "type": "string"
+                                                                    },
+                                                                    "vip": {
+                                                                      "type": "boolean"
+                                                                    },
                                                                     "createdAt": {
                                                                       "type": "string",
                                                                       "format": "date-time"
@@ -2962,6 +2968,12 @@
                                                                       }
                                                                     }
                                                                   },
+                                                                  "department": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "vip": {
+                                                                    "type": "boolean"
+                                                                  },
                                                                   "createdAt": {
                                                                     "type": "string",
                                                                     "format": "date-time"
@@ -5128,6 +5140,12 @@
                                                                       }
                                                                     }
                                                                   },
+                                                                  "department": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "vip": {
+                                                                    "type": "boolean"
+                                                                  },
                                                                   "createdAt": {
                                                                     "type": "string",
                                                                     "format": "date-time"
@@ -7280,6 +7298,12 @@
                                                                         }
                                                                       }
                                                                     }
+                                                                  },
+                                                                  "department": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "vip": {
+                                                                    "type": "boolean"
                                                                   },
                                                                   "createdAt": {
                                                                     "type": "string",
