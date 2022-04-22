@@ -15,11 +15,6 @@
     "name": {
       "type": "string"
     },
-    "type": {
-      "type": "component",
-      "repeatable": false,
-      "component": "general.service-type"
-    },
     "parent": {
       "type": "relation",
       "relation": "manyToOne",
@@ -31,6 +26,14 @@
       "relation": "oneToMany",
       "target": "api::service.service",
       "mappedBy": "parent"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "incident",
+        "category",
+        "subcategory"
+      ]
     }
   }
 }

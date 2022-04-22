@@ -40,17 +40,6 @@
                                             "name": {
                                               "type": "string"
                                             },
-                                            "type": {
-                                              "type": "object",
-                                              "properties": {
-                                                "id": {
-                                                  "type": "string"
-                                                },
-                                                "name": {
-                                                  "type": "string"
-                                                }
-                                              }
-                                            },
                                             "parent": {
                                               "type": "object",
                                               "properties": {
@@ -87,6 +76,14 @@
                                                   }
                                                 }
                                               }
+                                            },
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "incident",
+                                                "category",
+                                                "subcategory"
+                                              ]
                                             },
                                             "createdAt": {
                                               "type": "string",
@@ -2759,17 +2756,6 @@
                                           "name": {
                                             "type": "string"
                                           },
-                                          "type": {
-                                            "type": "object",
-                                            "properties": {
-                                              "id": {
-                                                "type": "string"
-                                              },
-                                              "name": {
-                                                "type": "string"
-                                              }
-                                            }
-                                          },
                                           "parent": {
                                             "type": "object",
                                             "properties": {
@@ -2806,6 +2792,14 @@
                                                 }
                                               }
                                             }
+                                          },
+                                          "type": {
+                                            "type": "string",
+                                            "enum": [
+                                              "incident",
+                                              "category",
+                                              "subcategory"
+                                            ]
                                           },
                                           "createdAt": {
                                             "type": "string",
@@ -5397,17 +5391,6 @@
                                           "name": {
                                             "type": "string"
                                           },
-                                          "type": {
-                                            "type": "object",
-                                            "properties": {
-                                              "id": {
-                                                "type": "string"
-                                              },
-                                              "name": {
-                                                "type": "string"
-                                              }
-                                            }
-                                          },
                                           "parent": {
                                             "type": "object",
                                             "properties": {
@@ -5444,6 +5427,14 @@
                                                 }
                                               }
                                             }
+                                          },
+                                          "type": {
+                                            "type": "string",
+                                            "enum": [
+                                              "incident",
+                                              "category",
+                                              "subcategory"
+                                            ]
                                           },
                                           "createdAt": {
                                             "type": "string",
@@ -8025,17 +8016,6 @@
                                           "name": {
                                             "type": "string"
                                           },
-                                          "type": {
-                                            "type": "object",
-                                            "properties": {
-                                              "id": {
-                                                "type": "string"
-                                              },
-                                              "name": {
-                                                "type": "string"
-                                              }
-                                            }
-                                          },
                                           "parent": {
                                             "type": "object",
                                             "properties": {
@@ -8072,6 +8052,14 @@
                                                 }
                                               }
                                             }
+                                          },
+                                          "type": {
+                                            "type": "string",
+                                            "enum": [
+                                              "incident",
+                                              "category",
+                                              "subcategory"
+                                            ]
                                           },
                                           "createdAt": {
                                             "type": "string",
