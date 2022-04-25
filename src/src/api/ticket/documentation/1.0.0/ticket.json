@@ -1728,7 +1728,7 @@
                                                                     "blocked": {
                                                                       "type": "boolean"
                                                                     },
-                                                                    "blocked_thread": {
+                                                                    "blocked_comments": {
                                                                       "type": "boolean"
                                                                     },
                                                                     "block_reason": {
@@ -2875,7 +2875,7 @@
                               "blocked": {
                                 "type": "boolean"
                               },
-                              "blocked_thread": {
+                              "blocked_comments": {
                                 "type": "boolean"
                               },
                               "block_reason": {
@@ -4938,7 +4938,7 @@
                                                                   "blocked": {
                                                                     "type": "boolean"
                                                                   },
-                                                                  "blocked_thread": {
+                                                                  "blocked_comments": {
                                                                     "type": "boolean"
                                                                   },
                                                                   "block_reason": {
@@ -6085,7 +6085,7 @@
                             "blocked": {
                               "type": "boolean"
                             },
-                            "blocked_thread": {
+                            "blocked_comments": {
                               "type": "boolean"
                             },
                             "block_reason": {
@@ -8067,7 +8067,7 @@
                                                                   "blocked": {
                                                                     "type": "boolean"
                                                                   },
-                                                                  "blocked_thread": {
+                                                                  "blocked_comments": {
                                                                     "type": "boolean"
                                                                   },
                                                                   "block_reason": {
@@ -9214,7 +9214,7 @@
                             "blocked": {
                               "type": "boolean"
                             },
-                            "blocked_thread": {
+                            "blocked_comments": {
                               "type": "boolean"
                             },
                             "block_reason": {
@@ -11186,7 +11186,7 @@
                                                                   "blocked": {
                                                                     "type": "boolean"
                                                                   },
-                                                                  "blocked_thread": {
+                                                                  "blocked_comments": {
                                                                     "type": "boolean"
                                                                   },
                                                                   "block_reason": {
@@ -12333,7 +12333,7 @@
                             "blocked": {
                               "type": "boolean"
                             },
-                            "blocked_thread": {
+                            "blocked_comments": {
                               "type": "boolean"
                             },
                             "block_reason": {
@@ -12698,7 +12698,7 @@
                       "blocked": {
                         "type": "boolean"
                       },
-                      "blocked_thread": {
+                      "blocked_comments": {
                         "type": "boolean"
                       },
                       "block_reason": {
