@@ -42,11 +42,6 @@
       "type": "boolean",
       "default": false
     },
-    "reply_to": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::comment.comment"
-    },
     "content_type": {
       "type": "enumeration",
       "enum": [

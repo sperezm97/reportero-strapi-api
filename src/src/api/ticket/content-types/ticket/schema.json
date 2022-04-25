@@ -84,6 +84,21 @@
         "normal",
         "high"
       ]
+    },
+    "blocked": {
+      "type": "boolean"
+    },
+    "blocked_thread": {
+      "type": "boolean"
+    },
+    "block_reason": {
+      "type": "text"
+    },
+    "reports": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::report.report",
+      "mappedBy": "ticket"
     }
   }
 }
