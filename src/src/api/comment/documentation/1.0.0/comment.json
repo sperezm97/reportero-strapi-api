@@ -713,9 +713,10 @@
                                                                   "vip": {
                                                                     "type": "boolean"
                                                                   },
-                                                                  "profile_type": {
+                                                                  "user_type": {
                                                                     "type": "string",
                                                                     "enum": [
+                                                                      "admin",
                                                                       "presidencial",
                                                                       "regional",
                                                                       "provincial",
@@ -3818,9 +3819,10 @@
                                                                 "vip": {
                                                                   "type": "boolean"
                                                                 },
-                                                                "profile_type": {
+                                                                "user_type": {
                                                                   "type": "string",
                                                                   "enum": [
+                                                                    "admin",
                                                                     "presidencial",
                                                                     "regional",
                                                                     "provincial",
@@ -6842,9 +6844,10 @@
                                                                 "vip": {
                                                                   "type": "boolean"
                                                                 },
-                                                                "profile_type": {
+                                                                "user_type": {
                                                                   "type": "string",
                                                                   "enum": [
+                                                                    "admin",
                                                                     "presidencial",
                                                                     "regional",
                                                                     "provincial",
@@ -9856,9 +9859,10 @@
                                                                 "vip": {
                                                                   "type": "boolean"
                                                                 },
-                                                                "profile_type": {
+                                                                "user_type": {
                                                                   "type": "string",
                                                                   "enum": [
+                                                                    "admin",
                                                                     "presidencial",
                                                                     "regional",
                                                                     "provincial",

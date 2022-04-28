@@ -93,9 +93,10 @@
       "type": "boolean",
       "default": false
     },
-    "profile_type": {
+    "user_type": {
       "type": "enumeration",
       "enum": [
+        "admin",
         "presidencial",
         "regional",
         "provincial",
@@ -104,14 +105,15 @@
       ]
     },
     "profile_picture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }
