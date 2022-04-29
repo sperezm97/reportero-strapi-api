@@ -1,43 +1,57 @@
-> Este repositorio está destinado a servir como una plantilla general sobre cómo configurar nuevos repositorios en la organización @ogticrd. 
+# 🚀 Getting started with Strapi
 
-## Project Title
+Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
 
-A brief description of what this project does and who it is for.
+### `develop`
 
-## Some advise
-Considerations, versions of libraries, bugs 
+Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
 
-## API Reference
-
-
-## Geting Started
-
-### Deployment
 ```
+npm run develop
+# or
+yarn develop
 ```
 
-### Documentation
+### `start`
+
+Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
+
 ```
+npm run start
+# or
+yarn start
 ```
-### Environment Variables
+
+### `build`
+
+Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
+
 ```
+npm run build
+# or
+yarn build
 ```
 
-## Built With 🛠️
-* [Technology 1 - version](url)
-* [Technology 2 - version](url)
-* [Technology 3 - version](url)
+## ⚙️ Deployment
 
-## Versioning. 📌
+Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
 
-For the versions available, see the [tags on this repository](https://github.com/opticrd/.....).
+## 📚 Learn more
 
-## Authors ✒️
+- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
+- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
+- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
+- [Strapi blog](https://docs.strapi.io) - Official Strapi blog containing articles made by the Strapi team and the community.
+- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
 
-* **Jonh Doe** - *Initial work* - [opticrd](https://github.com/opticrd)
+Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
 
-* **Jonh Doe** - *Maintainer* -  [opticrd](https://github.com/opticrd)
+## ✨ Community
 
+- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
+- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
+- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
 
 ---
-⌨️ with ❤️ by [Jonh Doe](https://github.com/User)
+
+<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
