@@ -1,0 +1,54 @@
+version: "3"
+services:
+  strapi:
+    container_name: strapi
+    build: .
+    image: reportero-strapi-api:latest
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATABASE_CLIENT: ${DATABASE_CLIENT}
+      DATABASE_HOST: mysql
+      DATABASE_NAME: ${DATABASE_NAME}
+      DATABASE_USERNAME: ${DATABASE_USERNAME}
+      DATABASE_PORT: ${DATABASE_PORT}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD}
+      JWT_SECRET: ${JWT_SECRET}
+      NODE_ENV: ${NODE_ENV}
+    links:
+      - mysql:mysql
+    volumes:
+      - ./config:/opt/app/config
+      - ./src:/opt/app/src
+      - ./package.json:/opt/package.json
+      - ./yarn.lock:/opt/yarn.lock
+      - ./.env:/opt/app/.env
+      - ./app:/srv/app
+    ports:
+      - "1337:1337"
+    networks:
+      - strapi
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql
+    command: mysqld --default-authentication-plugin=mysql_native_password
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      MYSQL_ROOT_PASSWORD: ${ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DATABASE_NAME}
+      MYSQL_USER: ${DATABASE_USERNAME}
+      MYSQL_PASSWORD: ${DATABASE_PASSWORD}
+    volumes:
+      - ./data:/var/lib/mysql
+    ports:
+      - "5432:5432"
+    networks:
+      - strapi
+
+networks:
+  strapi:
+    name: Strapi
+    driver: bridge
