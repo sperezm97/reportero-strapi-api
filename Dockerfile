@@ -1,15 +1,23 @@
-FROM strapi/base:alpine as release
+FROM node:16
 
-WORKDIR /app
+# Installing libvips-dev for sharp compatability
+RUN apt-get update && apt-get install libvips-dev
 
-COPY . ./
+ARG NODE_ENV=development
+ENV NODE_ENV=${NODE_ENV}
 
+WORKDIR /opt/
+COPY ./package.json ./
+COPY ./yarn.lock ./
+
+ENV PATH /opt/node_modules/.bin:$PATH
+RUN yarn config set network-timeout 600000 -g
 RUN yarn install
 
-ENV NODE_ENV production
+WORKDIR /opt/app
+COPY ./ .
 
 RUN yarn build
-
 EXPOSE 1337
 
 CMD ["yarn", "start"]
