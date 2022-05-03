@@ -1,0 +1,104 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tickets",
+  "info": {
+    "singularName": "ticket",
+    "pluralName": "tickets",
+    "displayName": "Ticket",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "services": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service.service"
+    },
+    "institution": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::institution.institution",
+      "inversedBy": "tickets"
+    },
+    "beneficiary": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::beneficiary.beneficiary",
+      "inversedBy": "tickets"
+    },
+    "zone": {
+      "type": "integer"
+    },
+    "address": {
+      "type": "text"
+    },
+    "evidence": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "owner": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "tickets"
+    },
+    "comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comment.comment",
+      "mappedBy": "ticket"
+    },
+    "state": {
+      "type": "enumeration",
+      "enum": [
+        "new",
+        "open",
+        "pending reminder",
+        "closed",
+        "merged",
+        "removed",
+        "pending close"
+      ]
+    },
+    "priority": {
+      "type": "enumeration",
+      "enum": [
+        "low",
+        "normal",
+        "high"
+      ]
+    },
+    "blocked": {
+      "type": "boolean"
+    },
+    "blocked_comments": {
+      "type": "boolean"
+    },
+    "block_reason": {
+      "type": "text"
+    },
+    "reports": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::report.report",
+      "mappedBy": "ticket"
+    }
+  }
+}
