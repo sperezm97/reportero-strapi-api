@@ -96,6 +96,7 @@ jobs:
             DB_DATABASE=${{ secrets.DB_DATABASE }},
             DB_USERNAME=${{ secrets.DB_USERNAME }},
             DB_PASSWORD=${{ secrets.DB_PASSWORD }},
+            DATABASE_CLIENT=${{ secrets.DATABASE_CLIENT }},
             GOOGLE_BUCKET_NAME=${{ secrets.GOOGLE_BUCKET_NAME }}
 
       - name: Set up Cloud SDK
