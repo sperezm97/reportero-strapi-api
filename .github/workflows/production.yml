@@ -101,7 +101,12 @@ jobs:
           region: ${{ secrets.GCP_REGION }}
           env_vars: |
             NODE_ENV=${{ env.NODE_ENV }},
-            REACT_APP_API_URL=${{ secrets.BACKEND_APP_API_URL }}
+            DB_HOST=${{ secrets.DB_HOST }},
+            DB_PORT=${{ secrets.DB_PORT }},
+            DB_DATABASE=${{ secrets.DB_DATABASE }},
+            DB_USERNAME=${{ secrets.DB_USERNAME }},
+            DB_PASSWORD=${{ secrets.DB_PASSWORD }},
+            GOOGLE_BUCKET_NAME=${{ secrets.GOOGLE_BUCKET_NAME }}
 
       - name: Testing Service with curl
         run: curl "${{ steps.deploy.outputs.url }}"

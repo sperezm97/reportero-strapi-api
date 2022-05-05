@@ -19,6 +19,7 @@ env:
   NODE_ENV: development
   SKIP_PREFLIGHT_CHECK: true
   DISABLE_ESLINT_PLUGIN: true
+  NODE_ENV: development
 
 jobs:
   build:
@@ -89,7 +90,13 @@ jobs:
           credentials: ${{ secrets.GAR_JSON_KEY }}
           region: ${{ secrets.GCP_REGION }}
           env_vars: |
-            NODE_ENV=${{ env.NODE_ENV }}
+            NODE_ENV=${{ env.NODE_ENV }},
+            DB_HOST=${{ secrets.DB_HOST }},
+            DB_PORT=${{ secrets.DB_PORT }},
+            DB_DATABASE=${{ secrets.DB_DATABASE }},
+            DB_USERNAME=${{ secrets.DB_USERNAME }},
+            DB_PASSWORD=${{ secrets.DB_PASSWORD }},
+            GOOGLE_BUCKET_NAME=${{ secrets.GOOGLE_BUCKET_NAME }}
 
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v0
