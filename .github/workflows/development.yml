@@ -19,7 +19,6 @@ env:
   NODE_ENV: development
   SKIP_PREFLIGHT_CHECK: true
   DISABLE_ESLINT_PLUGIN: true
-  NODE_ENV: development
 
 jobs:
   build:
