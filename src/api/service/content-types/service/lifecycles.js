@@ -1,3 +1,5 @@
+"use-strict";
+
 module.exports = 
 { 
     beforeCreate(event) {},
@@ -5,7 +7,18 @@ module.exports =
     afterCreate(event) 
     {       
         const { result, params  } = event;
-        strapi.log.debug("your string or object");
-        strapi.log.info("Yayy!, audit middleware rocks!");
+
+        strapi.log.info("----------------------------");
+        strapi.log.debug(result);
+        strapi.log.debug(params);
+        strapi.log.info("----------------------------");
+
+        // strapi.services.log.create({
+        //     model: 'service',
+        //     action: 'create',
+        //     content: result,
+        //     type: 'INFO',
+        //     autor: ''
+        // });
     },
 };
