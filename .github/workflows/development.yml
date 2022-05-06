@@ -59,6 +59,12 @@ jobs:
             NODE_ENV=${{ env.NODE_ENV }}
             SKIP_PREFLIGHT_CHECK=${{ env.SKIP_PREFLIGHT_CHECK }}
             DISABLE_ESLINT_PLUGIN=${{ env.DISABLE_ESLINT_PLUGIN }}
+            DATABASE_HOST=${{ secrets.DATABASE_HOST }}
+            DATABASE_PORT=${{ secrets.DATABASE_PORT }}
+            DATABASE_NAME=${{ secrets.DATABASE_NAME }}
+            DATABASE_USERNAME=${{ secrets.DATABASE_USERNAME }}
+            DATABASE_PASSWORD=${{ secrets.DATABASE_PASSWORD }}
+            DATABASE_CLIENT=${{ secrets.DATABASE_CLIENT }}
           push: true
           cache-from: type=registry,ref=${{ env.GAR_BASE }}/${{ env.GITHUB_REPOSITORY_NAME_PART_SLUG }}:${{ env.GITHUB_HEAD_REF_SLUG || env.GITHUB_REF_SLUG }}
           cache-to: type=inline
