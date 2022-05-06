@@ -101,11 +101,11 @@ jobs:
           region: ${{ secrets.GCP_REGION }}
           env_vars: |
             NODE_ENV=${{ env.NODE_ENV }},
-            DB_HOST=${{ secrets.DB_HOST }},
-            DB_PORT=${{ secrets.DB_PORT }},
-            DB_DATABASE=${{ secrets.DB_DATABASE }},
-            DB_USERNAME=${{ secrets.DB_USERNAME }},
-            DB_PASSWORD=${{ secrets.DB_PASSWORD }},
+            DATABASE_HOST=${{ secrets.DATABASE_HOST }},
+            DATABASE_PORT=${{ secrets.DATABASE_PORT }},
+            DATABASE_NAME=${{ secrets.DATABASE_NAME }},
+            DATABASE_USERNAME=${{ secrets.DATABASE_USERNAME }},
+            DATABASE_PASSWORD=${{ secrets.DATABASE_PASSWORD }},
             DATABASE_CLIENT=${{ secrets.DATABASE_CLIENT }},
             GOOGLE_BUCKET_NAME=${{ secrets.GOOGLE_BUCKET_NAME }}
 
