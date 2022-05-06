@@ -1,7 +1,7 @@
-FROM node:16
+FROM node:16 as release
 
 # Installing libvips-dev for sharp compatability
-RUN apt-get update && apt-get install libvips-dev
+RUN apt-get update -qq && apt-get install -y libvips-dev
 
 ARG NODE_ENV=development
 ENV NODE_ENV=${NODE_ENV}
